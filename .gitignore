@@ -1,0 +1,5 @@
+piano_svsep/
+
+.eggs/
+__pycache__/
+venv/

@@ -1,0 +1,14 @@
+from pi_1 import individual_pi_1, total_pi_1
+from tabulate import tabulate #gives me fancy grid
+
+# import rtmidi
+# ----------------------------------------------------------------------------------------------------------------------------------------------------
+data = [(1, 2, 1), (3, 7, 3), (-1,-2,-1)]
+
+
+# everything here
+def main(li, n):
+    print(tabulate(individual_pi_1(li, n), tablefmt="fancy_grid"))
+    print(tabulate(total_pi_1(individual_pi_1(li, n)), tablefmt="fancy_grid"))
+    return 
+print(main(data, 2))
