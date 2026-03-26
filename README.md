@@ -12,3 +12,5 @@ This project uses or builds upon work from:
 
 
 This program calculates the fundamental group that are played on MIDI instruments, as long as you are connected to a MIDI device 
+
+Make sure you are using python 3.11, as 3.13 does not work well with torch

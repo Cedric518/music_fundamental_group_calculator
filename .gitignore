@@ -3,7 +3,8 @@
 .eggs/
 __pycache__/
 venv311/
-venv313/
 venv/
 test.py
+LICENSE
+README.md
 

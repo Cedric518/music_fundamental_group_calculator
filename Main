@@ -1,7 +1,14 @@
-from pi_1 import individual_pi_1, total_pi_1
+from pizzas.pi_1 import individual_pi_1, total_pi_1
 from tabulate import tabulate #gives me fancy grid
+from pizzas.input import get_input
+from pizzas.converter import converter_
 
-# import rtmidi
+import rtmidi
+import mido
+from mido import MidiFile, MidiTrack, Message
+import music21
+import time
+import os
 # ----------------------------------------------------------------------------------------------------------------------------------------------------
 data = [(1, 2, 1), (3, 7, 3), (-1,-2,-1)]
 
@@ -12,3 +19,7 @@ def main(li, n):
     print(tabulate(total_pi_1(individual_pi_1(li, n)), tablefmt="fancy_grid"))
     return 
 print(main(data, 2))
+
+get_input()
+converter_()
+
